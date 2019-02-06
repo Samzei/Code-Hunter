@@ -1,0 +1,35 @@
+.qoute {
+    background-image: linear-gradient(rgba($navy, .5), rgba($navy, .5)), url(../../img/newslatter.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+
+    grid-column: 1 / -1 ;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, max-content));
+    justify-content: space-around;
+    align-items: center;
+    grid-gap: 1rem;
+
+    &__txt {
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    button {
+        justify-self: end;
+
+        @include respond(tab-port) {
+           justify-self: center;
+        }
+    }
+
+}

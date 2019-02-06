@@ -1,0 +1,95 @@
+.header {
+    background-color: rgba($navylight, .5);
+    margin-top: 1rem;
+    padding: 1.5rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 3rem;
+    justify-items: center;
+
+    @include respond(tab-port) {
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    }
+
+    
+
+    &__logo {
+        display: grid;
+        grid-template-columns: repeat(2, 5rem);
+        justify-items: center;
+        grid-column-gap: -2rem;
+
+        &--img {
+            height: 100%;
+            justify-self: end;
+        }
+        
+
+        &--text {
+            color: #fff;
+            font-size: 1.3rem;
+            font-weight: 700;
+            justify-self: start;
+            align-self: flex-end;
+
+            @include respond(tab-port) {
+                font-size: 1.8rem;
+            }
+        }
+
+        
+    }
+
+    &__nav {
+        width: 100%;
+        align-self: center;
+
+        @include respond(tab-port) {
+            justify-self: end;
+        }
+    }
+
+    &__list {
+        width: 80%;
+        height: inherit;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+        justify-items: center;
+        align-items: flex-start;
+        grid-gap: 3rem;
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: #fff;
+        height: 10rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 1.5rem;
+        transition: all .5s;
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
+
+        &:hover {
+            border-bottom: .3rem solid $nature;
+
+            @include respond(tab-port) {
+                
+                background-color: $nature;
+            }
+        }
+
+    }
+
+
+    
+}

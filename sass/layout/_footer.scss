@@ -1,0 +1,23 @@
+.footer {
+    background-color: #212121;
+    padding: 1.5rem 0;
+
+    grid-column: 1 / -1;
+
+    display: grid ;
+    grid-template-columns: repeat(auto-fit, minmax(mincontent, max-content));
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 1.4rem;
+
+    span {
+        color: $nature;
+    }
+}

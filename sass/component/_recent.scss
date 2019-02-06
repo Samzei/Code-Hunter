@@ -1,0 +1,54 @@
+.recent {
+    padding: 3rem;
+
+    grid-column: 2 / 9;
+
+    display: grid;
+    grid-gap: 1rem;
+
+    @include respond(tab-port) {
+        
+    }
+
+    &__heading {
+        justify-self: center;
+        
+        display: grid;
+        grid-row-gap: 1.5rem;
+        justify-items: center;
+    }
+
+    &__text {
+        font-size: 1.3rem;
+        line-height: .5;
+
+        @include respond (tab-port) {
+            font-size: 1.8;
+            line-height: 1;
+        }
+    }
+
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+    &__img {
+        justify-self: center;
+        align-self: center;
+
+        width: 100%;
+        transition: all .2s;
+
+        &:hover {
+            background-color: rgba($navy, .5);
+        }
+    }
+
+    &__btn {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-gap: 1rem;
+    }
+}

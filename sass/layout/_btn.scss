@@ -1,0 +1,129 @@
+.btn {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    @include respond(tab-port) {
+        font-size: 2.5rem;
+    }
+
+    &__border-white {
+        padding: 1rem 1.5rem;
+        color: #fff;
+        border: .2rem solid #fff;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $nature;
+            border: .2rem solid $nature;
+        }
+    }
+
+    &__border-green {
+        padding: 1rem 1.5rem;
+        color: $nature;
+        border: .1rem solid $nature;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $nature;
+            border: .1rem solid $nature;
+            color: #fff;
+        }
+    }
+
+    &__border-grey {
+        padding: .5rem 1.5rem;
+        border: .1rem solid $ash;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $nature;
+            border: .1rem solid $nature;
+        }
+    }
+
+    &__border-active {
+        background-color: $nature;
+        border: .1rem solid $nature;
+    }
+
+    &__green {
+        padding: 1rem 1.5rem;
+        text-align: center;
+        background-color: $nature;
+        border: .1rem solid $nature;
+        color: #fff;
+        transition: all .2s;
+
+        &:hover {
+            background-color: transparent;
+            color: $greydark;
+        }
+    }
+
+    &__bg-black {
+        color: #fff;
+        background-color: $navy;
+        padding: 1rem 1.5rem;
+        border: .3rem solid $navy;
+        font-weight: 600;
+        font-size: 1.3rem;
+        transition: all .2s;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
+    }
+
+    &__dark {
+        color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 10rem;
+        font-weight: 700;
+        font-size: 1.3rem;
+        box-shadow: 0 1rem 1.5rem rgba( #000, .85);
+        transition: all .2s;
+
+        &:hover {
+            background-color: $nature;
+        }
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
+    }
+
+    &__animate {
+        color: $navy;
+        font-size: inherit;
+        padding-bottom: 2px;
+        display: inline-block;
+        cursor: pointer;
+        transition: all .2s;
+    
+        span {
+            margin-left: 3px;
+            transition: margin-left .2s;
+        }
+    
+        &:hover {
+            color: $nature;
+    
+            span {
+                margin-left: 8px;
+            }
+    
+        }
+    
+        &:focus {
+            outline: none;
+            animation: pulsate 1s infinite;
+        }
+    }
+}

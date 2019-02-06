@@ -1,0 +1,31 @@
+.count {
+    grid-column: -1 / 1;
+
+    padding: 5rem;
+    margin: 5rem 0;
+    background-image: linear-gradient(rgba($navy, .5), rgba($navy, .5)), url(../../img/counter.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 3rem;
+    justify-content: center;
+    align-content: center;
+
+    &__detail {
+        display: grid;
+        grid-gap: .5rem;
+        justify-items: center;
+    }
+
+    &__number {
+        font-size: 3.3rem;
+        color: $nature;
+    }
+
+    &__text {
+        font-size: 1rem;
+        color: #fff;
+    }
+}

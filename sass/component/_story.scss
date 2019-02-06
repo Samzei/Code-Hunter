@@ -1,0 +1,40 @@
+.story {
+    grid-column: 2 / 9;
+
+    margin: 5rem 0;
+    padding: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-column-gap: 2rem;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+
+
+    &__details {
+        padding: 2rem;
+
+        display: grid;
+        grid-row-gap: 1rem;
+        justify-items: start;
+
+        @include respond (tab-port) {
+            font-size: 1.5rem;
+        }
+    }
+
+    
+    &__video {
+        background-image: linear-gradient(rgba($navy, .5), rgba($navy, .5)), url(../../img/about.jpg);
+        background-size: cover;
+        background-position: center;
+
+        width: 100%;
+
+        @include respond (phone) {
+            display: none;
+            width: 0;
+        }
+    }
+}

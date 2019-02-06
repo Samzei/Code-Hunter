@@ -1,0 +1,16 @@
+.logos {
+    grid-column: 2 / 9;
+
+    margin: 5rem 10rem;
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    grid-gap: 3rem;
+
+    &__img {
+        width: 100%;
+    }
+}

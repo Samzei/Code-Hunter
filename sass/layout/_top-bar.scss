@@ -1,0 +1,30 @@
+.top-bar {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+
+    background-color: $navy;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    justify-content: center;
+    
+    @include respond(tab-port) {
+        width: 0;
+        display: none;
+    }
+
+    &__contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    
+}

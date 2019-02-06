@@ -1,0 +1,91 @@
+.service-price {
+    grid-column: 2 / 9;
+    
+    display: grid;
+    grid-gap: 3rem;
+
+    &__heading {
+        justify-self: center;
+        
+        display: grid;
+        grid-row-gap: 1.5rem;
+        justify-items: center;
+    }
+
+    &__text {
+        font-size: 1.3rem;
+        line-height: .5;
+
+        @include respond(tab-port) {
+            font-size: 1.8rem;
+            line-height: 1;
+            text-align: center;
+        }
+    }
+
+    &__det {
+        justify-self: stretch;
+
+        padding: 1rem;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        justify-content: center;
+        align-content: center;
+        grid-gap: 3rem;
+
+        @include respond(tab-port) {
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        }
+
+    }
+
+    &__card{
+        background-color: #333333;
+
+        display: grid;
+        grid-row-gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    &__list {
+        padding: 0 2rem;
+    }
+
+    &__item {
+        padding: 1rem 0;
+        border-bottom: .1rem dotted $nature;
+        color: #fff;
+        font-size: 1.2rem;
+        list-style: none;
+
+        @include respond(tab-port) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__txt {
+        text-align: center;
+        background-color: $nature;
+        font-size: 1.2rem;
+        padding: .5rem;
+        color: #fff;
+        font-weight: 500;
+
+        span {
+            font-size: 1.5rem;
+
+            @include respond(tab-port) {
+                font-size: 2rem;
+            }
+        }
+
+        @include respond(tab-port) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__btn {
+        justify-self: center;
+    }
+}
