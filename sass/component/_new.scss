@@ -105,5 +105,12 @@
     button {
         justify-self: end;
     }
+
+    &__fa {
+        color: transparent;
+        background-color: $ash;
+        background-clip: text;
+        padding: .5rem;
+    }
     
 }

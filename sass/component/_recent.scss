@@ -45,10 +45,4 @@
             background-color: rgba($navy, .5);
         }
     }
-
-    &__btn {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-        grid-gap: 1rem;
-    }
 }

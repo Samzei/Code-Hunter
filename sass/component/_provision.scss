@@ -44,4 +44,22 @@
             font-weight: 300;
         }
     }
+
+    &__icon {
+        height: 3rem;
+    }
+
+    &__fa {
+        font-size: 3rem !important;
+        color: transparent;
+        background-color: $ash;
+        background-clip: text;
+        transform: rotate(0deg);
+        transition: all, .2s;
+
+        &:hover {
+            background-color: $nature;
+            transform: rotate(360deg);
+        }
+    }
 }

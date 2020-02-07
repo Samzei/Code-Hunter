@@ -21,7 +21,7 @@
 
     &__content {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         grid-gap: 3rem;
     }
 
@@ -43,11 +43,18 @@
                 font-size: 1.4rem;
                 color: $greydark;
             }
+
+            @include respond (tab-port) {
+                width: 100%;
+            }
         }
 
         &--message {
             grid-column: 1 / -1;
             width: 44rem !important;
+            @include respond (tab-port) {
+                width: 100%;
+            }
         }
 
         button {

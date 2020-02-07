@@ -5,12 +5,31 @@
     grid-column: 1 / -1;
 
     display: grid ;
-    grid-template-columns: repeat(auto-fit, minmax(mincontent, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-template-rows: 1fr;
     justify-content: center;
     align-content: center;
     align-items: center;
     justify-items: center;
+
+    &__social {
+        justify-self: end;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+    }
+
+    &__fa {
+        color: transparent;
+        background-color: $ash;
+        background-clip: text;
+        transition: all, .2s;
+
+        &:hover {
+            background-color: $nature;
+        }
+    }
 }
 
 .copyright {

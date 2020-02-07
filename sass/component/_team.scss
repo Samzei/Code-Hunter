@@ -37,4 +37,10 @@
         border: .2rem solid $ash;
         border-radius: 50%;
     }
+
+    &__fa {
+        color: transparent;
+        background-color: $nature;
+        background-clip: text;
+    }
 }

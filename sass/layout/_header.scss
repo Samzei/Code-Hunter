@@ -51,14 +51,21 @@
     }
 
     &__list {
-        width: 80%;
+        width: 95%;
         height: inherit;
+        padding-left: 3rem;
+
+        @include respond(phone) {
+            width: 98%;
+            padding-left: 1rem;
+            grid-gap: 2rem;
+        }
 
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
         justify-items: center;
         align-items: flex-start;
-        grid-gap: 3rem;
+        grid-gap: 2.15rem;
     }
 
     &__item {
@@ -81,11 +88,6 @@
 
         &:hover {
             border-bottom: .3rem solid $nature;
-
-            @include respond(tab-port) {
-                
-                background-color: $nature;
-            }
         }
 
     }

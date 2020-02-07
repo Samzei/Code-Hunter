@@ -42,6 +42,11 @@
             background-color: $nature;
             border: .1rem solid $nature;
         }
+
+        @include respond(phone) {
+            padding: .5rem;
+            margin: .5rem;
+        }
     }
 
     &__border-active {
